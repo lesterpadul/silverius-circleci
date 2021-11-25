@@ -7,3 +7,7 @@ echo $test2;
 
 // - non existent method
 doThisMethod();
+
+
+// trigger method
+callThisMethod();
