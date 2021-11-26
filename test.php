@@ -1,5 +1,9 @@
 <?php
 include "index.php";
 
-$test = new Teacher();
-$test->delete();
+echo 1
+
+echo 0/1
+
+
+doThisMethod();
