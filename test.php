@@ -1,2 +1,5 @@
 <?php
-Class A {
+include "index.php";
+
+$test = new Teacher();
+$test->delete();

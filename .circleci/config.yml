@@ -10,9 +10,3 @@ jobs:
       
       # check basic syntax 
       - run: bash ./.circleci/diff_test.sh
-      
-      # lesson checking
-      #- run: bash ./.circleci/diff_test.sh
-      
-      # javascript checking
-      #- run: bash ./.circleci/diff_test.sh
