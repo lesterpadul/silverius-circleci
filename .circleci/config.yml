@@ -12,5 +12,5 @@ jobs:
             echo $CIRCLE_BRANCH
             files=`git diff master NJ-1 --name-only | grep ".php"`
             for file in $files; do
-              php file
+              php $file
             done
