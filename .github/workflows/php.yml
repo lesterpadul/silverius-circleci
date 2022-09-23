@@ -17,4 +17,4 @@ jobs:
 
     - name: checking syntaxes
       run: |
-        bash ./.github/workflows/diff_test.sh
+        bash ./.github/shell/diff_test.sh
