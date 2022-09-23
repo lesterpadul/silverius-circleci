@@ -1,3 +1,5 @@
+echo ${GITHUB_REF##*/}
+
 for i in $(git diff origin/master..origin/$(git rev-parse --abbrev-ref HEAD) --name-only | grep ".php"); do
     # check file
     echo "Checking file -> $i"
