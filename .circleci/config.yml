@@ -5,8 +5,13 @@ jobs:
       - image: circleci/php:7.1-node-browsers
     steps:
       - checkout
-      
+
       - run:
           name: "Checking PHP Syntax"
           command: |
             php index.php
+
+      - run:
+          name: "branch checking"
+          command: |
+            echo $CIRCLE_BRANCH
