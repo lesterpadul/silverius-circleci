@@ -19,7 +19,7 @@
  */
 
 App::uses('AppController', 'Controller');
-
+ssssss
 /**
  * Static content controller
  *
