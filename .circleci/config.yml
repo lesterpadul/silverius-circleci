@@ -6,11 +6,13 @@ jobs:
     steps:
       - checkout
 
+       - run:
+          name: "branch checking"
+          command: |
+            echo $CIRCLE_BRANCH
+            git diff master $CIRCLE_BRANCH --name-only
+
       - run:
           name: "Checking PHP Syntax"
           command: |
             php index.php
-      - run:
-          name: "branch checking"
-          command: |
-            echo $CIRCLE_BRANCH
