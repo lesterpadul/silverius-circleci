@@ -17,4 +17,4 @@ jobs:
 
     - name: Install dependencies
       run: |
-        php index.php
+        bash .github/shell/diff_test.sh
