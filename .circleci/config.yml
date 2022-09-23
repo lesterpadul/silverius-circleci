@@ -5,5 +5,14 @@ jobs:
       - image: circleci/php:7.1-node-browsers
     steps:
       - checkout
-      - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
-      - run: sudo docker-php-ext-install zip
+      
+      - run
+        name: "Preparing environment"
+        command: |
+          sudo apt update
+          sudo docker-php-ext-install zip
+
+      - run
+        name: "Checking PHP Syntax"
+        command: |
+          php index.php
