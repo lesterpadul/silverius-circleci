@@ -10,7 +10,6 @@ jobs:
           name: "Checking PHP Syntax"
           command: |
             php index.php
-
       - run:
           name: "branch checking"
           command: |
