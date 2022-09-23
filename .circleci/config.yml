@@ -6,13 +6,13 @@ jobs:
     steps:
       - checkout
       
-      - run
+      - run:
         name: "Preparing environment"
         command: |
           sudo apt update
           sudo docker-php-ext-install zip
 
-      - run
+      - run:
         name: "Checking PHP Syntax"
         command: |
           php index.php
