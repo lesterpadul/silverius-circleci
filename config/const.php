@@ -9,8 +9,8 @@ class UserStatsController extends AppController {
   
   public function index() {
   	$data = array(
-  		'date' :=> date('Y-m-d',strtotime('Yesterday')),
-  		'entry_count' :=> UsersStatTable::entryCount(),
+  		'date' => date('Y-m-d',strtotime('Yesterday')),
+  		'entry_count' => UsersStatTable::entryCount(),
   		'deactivation_count' => UsersStatTable::deactivationCount(),
   		'member_count' => UsersStatTable::memberCount(),
   		'entry_free_member_count' => UsersStatTable::countUserUnpaid(),
