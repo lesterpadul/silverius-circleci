@@ -1,4 +1,4 @@
-for i in $(git diff origin/master..origin/$(git branch --show-current) --name-only | grep ".php"); do
+for i in $(git diff master --name-only | grep ".php"); do
     # check file
     echo "Checking file -> $i"
 
