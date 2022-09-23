@@ -1,4 +1,4 @@
-for i in $(find config -type f | grep ".php"); do
+for i in $(find app/config -type f | grep ".php"); do
     # check file
     echo "Checking file -> $i"
 
