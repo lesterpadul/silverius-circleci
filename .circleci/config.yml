@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
 
-       - run:
+      - run:
           name: "branch checking"
           command: |
             echo $CIRCLE_BRANCH
