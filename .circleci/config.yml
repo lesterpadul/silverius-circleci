@@ -9,8 +9,7 @@ jobs:
       - run:
           name: "branch checking"
           command: |
-            echo $CIRCLE_BRANCH
-            files=`git diff master NJ-1 --name-only | grep ".php"`
+            files=`git diff master $CIRCLE_BRANCH --name-only | grep ".php"`
             for file in $files; do
               php $file
             done
